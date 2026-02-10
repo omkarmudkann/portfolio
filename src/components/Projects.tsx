@@ -37,6 +37,7 @@ export const projects: Project[] = [
       "Designed a unified payment status model and transaction ledger.",
       "Implemented secure webhooks + retries + idempotency to prevent duplicates.",
       "Built reconciliation workflows with clear source-of-truth rules.",
+      "SI mandate integration and support for multiple payment gateways.",
     ],
     impact: [
       "Achieved 100% reconciliation accuracy for supported flows.",
