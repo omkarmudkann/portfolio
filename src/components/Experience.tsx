@@ -1,16 +1,15 @@
-import { Briefcase, GraduationCap } from "lucide-react";
 
 const Experience = () => {
   return (
     <section id="experience" className="section-padding">
       <div className="section-container max-w-5xl">
-        <h2 className="text-4xl md:text-5xl font-serif font-medium mb-12">
+        <h2 data-reveal className="text-4xl md:text-5xl font-serif font-medium mb-12">
           Experience
         </h2>
 
         <div className="space-y-16">
           {/* Repos Energy – Product Manager */}
-          <div>
+          <div data-reveal data-delay="100" className="border-l-2 border-border/40 pl-6 hover:border-accent transition-colors duration-500">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
                 <h3 className="text-2xl font-semibold">
@@ -20,40 +19,48 @@ const Experience = () => {
                   Repos Energy India Pvt. Ltd. · Pune, India
                 </p>
               </div>
-              <span className="text-sm text-muted-foreground mt-2 md:mt-0">
+              <span className="text-sm text-[hsl(var(--accent-2))] font-medium mt-2 md:mt-0">
                 Dec 2022 – Present
               </span>
             </div>
 
-            <ul className="space-y-3 text-muted-foreground text-lg leading-relaxed list-disc pl-5">
+            <ul className="space-y-4 text-muted-foreground text-lg leading-relaxed list-disc pl-5">
               <li>
-                Owned end-to-end delivery of customer-facing and internal
-                platforms across CRM, ordering, subscriptions, and payments.
+                Owned end-to-end delivery of e-commerce, AI-enabled CRM, and
+                payments platforms, leading a 14-member cross-functional
+                engineering team across design, backend, QA, and operations.
               </li>
               <li>
-                Led roadmap planning and sprint execution with a 14-member
-                engineering team, shipping releases reliably across multiple
-                product lines.
+                Designed and shipped a full subscription management system —
+                plan creation, lifecycle management, renewals, upgrades,
+                cancellations, and automated dunning workflows — built from zero.
               </li>
               <li>
-                Designed and scaled lead-to-revenue funnels with UTM tracking,
-                subscription logic, and autopay workflows.
+                Integrated eNACH and SI (Standing Instruction) mandate flows for
+                NPCI-compliant recurring payments, covering mandate registration,
+                execution, revocation, and failure handling.
               </li>
               <li>
-                Launched and stabilized payment, KYC, and vendor integrations,
-                eliminating reconciliation issues and improving transaction
-                reliability.
+                Owned payment gateway integrations end-to-end: API contracts,
+                tokenization, webhook handling, automated reconciliation, failure
+                retries, and RBI compliance — reducing manual payment follow-ups
+                by 60%.
               </li>
               <li>
-                Automated operational and compliance workflows using Django REST
-                Framework, saving 300+ hours per month and reducing support
-                dependency.
+                Integrated LLM-enabled features and ML-based classification into
+                operational workflows, improving decision intelligence and
+                reducing manual intervention across key processes.
+              </li>
+              <li>
+                Automated compliance and operational workflows using Django REST
+                Framework, saving 300+ hours per month and improving overall
+                operational efficiency by 40%.
               </li>
             </ul>
           </div>
 
           {/* Repos Energy – Operations Excellence */}
-          <div>
+          <div data-reveal data-delay="150" className="border-l-2 border-border/40 pl-6 hover:border-accent transition-colors duration-500">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
                 <h3 className="text-2xl font-semibold">
@@ -63,12 +70,12 @@ const Experience = () => {
                   Repos Energy India Pvt. Ltd. · Pune, India
                 </p>
               </div>
-              <span className="text-sm text-muted-foreground mt-2 md:mt-0">
+              <span className="text-sm text-[hsl(var(--accent-2))] font-medium mt-2 md:mt-0">
                 Dec 2021 – Dec 2022
               </span>
             </div>
 
-            <ul className="space-y-3 text-muted-foreground text-lg leading-relaxed list-disc pl-5">
+            <ul className="space-y-4 text-muted-foreground text-lg leading-relaxed list-disc pl-5">
               <li>
                 Analyzed customer and partner behavior to identify adoption
                 gaps, driving initiatives that increased active users by 45%.
@@ -89,7 +96,7 @@ const Experience = () => {
           </div>
 
           {/* LogiAngle – Business Development */}
-          <div>
+          <div data-reveal data-delay="200" className="border-l-2 border-border/40 pl-6 hover:border-accent transition-colors duration-500">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
                 <h3 className="text-2xl font-semibold">
@@ -99,12 +106,12 @@ const Experience = () => {
                   LogiAngle · Pune, India
                 </p>
               </div>
-              <span className="text-sm text-muted-foreground mt-2 md:mt-0">
+              <span className="text-sm text-[hsl(var(--accent-2))] font-medium mt-2 md:mt-0">
                 Jul 2019 – Aug 2020
               </span>
             </div>
 
-            <ul className="space-y-3 text-muted-foreground text-lg leading-relaxed list-disc pl-5">
+            <ul className="space-y-4 text-muted-foreground text-lg leading-relaxed list-disc pl-5">
               <li>
                 Worked with product teams to tailor cloud-based solutions and
                 deliver targeted demos, improving demo-to-deal conversion

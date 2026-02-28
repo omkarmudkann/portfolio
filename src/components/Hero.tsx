@@ -22,39 +22,41 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center section-container pt-24">
       <div className="text-center max-w-4xl space-y-8">
-        {/* Greeting */}
-        <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight">
+        {/* Greeting — staggered fade-in on load */}
+        <h1 className="fade-in-up stagger-1 text-5xl md:text-7xl font-serif font-medium tracking-tight">
           {greetings[index]}
           <span className="text-accent">,</span>
           <br />
-          I’m <span className="text-foreground">Omkar Mudkanna</span>
+          I'm <span className="text-foreground">Omkar Mudkanna</span>
         </h1>
 
         {/* Positioning */}
-        <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-          Product Manager with 4+ years of experience building SaaS, fintech,
-          and operational platforms across web, mobile, and IoT ecosystems.
+        <p className="fade-in-up stagger-2 text-xl md:text-2xl text-muted-foreground leading-relaxed">
+          Technical Product Manager with 4+ years of experience shipping
+          AI-powered platforms, fintech systems, and operational products
+          across web, mobile, and IoT ecosystems.
         </p>
 
         {/* Value proposition */}
-        <p className="text-lg text-muted-foreground/80 max-w-3xl mx-auto">
-          I specialize in product strategy, payments, subscriptions, and
-          automation — translating complex business problems into scalable,
-          high-impact products.
+        <p className="fade-in-up stagger-3 text-lg text-muted-foreground/80 max-w-3xl mx-auto">
+          I specialize in end-to-end payment systems, subscription lifecycle
+          management, and AI/ML-enabled automation — leading cross-functional
+          teams to deliver high-impact products across fintech, e-commerce,
+          and operations.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+        <div className="fade-in-up stagger-4 flex flex-col sm:flex-row gap-4 justify-center pt-6">
           <a
             href="#projects"
-            className="inline-flex items-center justify-center bg-accent text-accent-foreground px-8 py-3 rounded-full font-medium transition hover:brightness-110"
+            className="inline-flex items-center justify-center bg-accent text-accent-foreground px-8 py-3 rounded-full font-medium transition-all duration-300 hover:brightness-110 hover:scale-105"
           >
             View Work
           </a>
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center border border-border px-8 py-3 rounded-full font-medium hover:bg-secondary transition"
+            className="inline-flex items-center justify-center border border-border px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-secondary hover:border-accent/30"
           >
             Contact Me
           </a>

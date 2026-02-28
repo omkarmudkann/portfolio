@@ -4,86 +4,96 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 222 47% 11%;
+    /* Light mode — clean white + vivid amber that actually reads as gold */
+    --background: 0 0% 99%;
+    --foreground: 222 25% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 222 25% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 222 25% 9%;
 
-    --primary: 222 47% 11%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 222 25% 9%;
+    --primary-foreground: 0 0% 99%;
 
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 220 16% 95%;
+    --secondary-foreground: 222 20% 22%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 16% 95%;
+    --muted-foreground: 220 10% 44%;
 
-    --accent: 173 58% 39%;
+    /* Vivid amber — bright, clear, reads as gold not brown */
+    --accent: 36 97% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    /* Vivid blue — secondary accent */
+    --accent-2: 215 85% 55%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 173 58% 39%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 36 97% 50%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 222 20% 22%;
+    --sidebar-primary: 222 25% 9%;
+    --sidebar-primary-foreground: 0 0% 99%;
+    --sidebar-accent: 220 16% 95%;
+    --sidebar-accent-foreground: 222 20% 22%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 36 97% 50%;
   }
 
   .dark {
-    --background: 220 30% 5%;
-    --foreground: 210 40% 96%;
+    /* Dark mode — rich dark navy (not flat black) + vivid gold */
+    --background: 224 24% 6%;
+    --foreground: 210 18% 94%;
 
-    --card: 220 30% 7%;
-    --card-foreground: 210 40% 96%;
+    --card: 224 22% 9%;
+    --card-foreground: 210 18% 94%;
 
-    --popover: 220 30% 7%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 224 22% 9%;
+    --popover-foreground: 210 18% 94%;
 
-    --primary: 210 40% 96%;
-    --primary-foreground: 220 30% 5%;
+    --primary: 210 18% 94%;
+    --primary-foreground: 224 24% 6%;
 
-    --secondary: 220 25% 12%;
-    --secondary-foreground: 210 40% 96%;
+    --secondary: 224 20% 13%;
+    --secondary-foreground: 210 14% 76%;
 
-    --muted: 220 25% 12%;
-    --muted-foreground: 215 20% 60%;
+    --muted: 224 20% 13%;
+    --muted-foreground: 220 14% 58%;
 
-    --accent: 170 60% 45%;
-    --accent-foreground: 0 0% 100%;
+    /* Vivid bright gold — luminous against dark navy */
+    --accent: 40 100% 60%;
+    --accent-foreground: 224 24% 6%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    /* Bright blue — secondary accent */
+    --accent-2: 215 85% 62%;
 
-    --border: 220 25% 14%;
-    --input: 220 25% 14%;
-    --ring: 170 60% 45%;
+    --destructive: 0 63% 44%;
+    --destructive-foreground: 0 0% 98%;
 
-    --glow-primary: 170 60% 45%;
-    --glow-secondary: 200 70% 50%;
+    --border: 224 20% 16%;
+    --input: 224 20% 16%;
+    --ring: 40 100% 60%;
 
-    --sidebar-background: 220 30% 6%;
-    --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 170 60% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 25% 12%;
-    --sidebar-accent-foreground: 210 40% 96%;
-    --sidebar-border: 220 25% 14%;
-    --sidebar-ring: 170 60% 45%;
+    --glow-primary: 40 100% 60%;
+    --glow-secondary: 215 85% 62%;
+
+    --sidebar-background: 224 24% 5%;
+    --sidebar-foreground: 210 18% 90%;
+    --sidebar-primary: 40 100% 60%;
+    --sidebar-primary-foreground: 224 24% 6%;
+    --sidebar-accent: 224 20% 13%;
+    --sidebar-accent-foreground: 210 18% 90%;
+    --sidebar-border: 224 20% 16%;
+    --sidebar-ring: 40 100% 60%;
   }
 }
 
@@ -98,6 +108,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
+  }
+
+  /* Dark mode: add subtle depth gradient to body */
+  .dark body {
+    background: radial-gradient(ellipse 80% 50% at 50% -10%, hsl(224 30% 10%) 0%, hsl(224 24% 6%) 60%);
   }
 
   h1, h2 {
@@ -121,45 +136,57 @@
   }
 
   .section-padding {
-    @apply py-24 lg:py-32;
+    @apply py-16 lg:py-24;
   }
-
 
   .gradient-text {
     @apply bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent;
   }
 
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
-  }
-
+  /* ─── Hero load animations (above-fold, fire on mount) ─── */
   .fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.5s ease-out forwards;
   }
 
   .fade-in-up {
+    opacity: 0;
     animation: fadeInUp 0.6s ease-out forwards;
   }
 
-  .stagger-1 { animation-delay: 0.1s; }
-  .stagger-2 { animation-delay: 0.2s; }
-  .stagger-3 { animation-delay: 0.3s; }
-  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-1 { animation-delay: 0.08s; }
+  .stagger-2 { animation-delay: 0.18s; }
+  .stagger-3 { animation-delay: 0.30s; }
+  .stagger-4 { animation-delay: 0.42s; }
+
+  /* ─── Scroll-triggered reveal ─── */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  [data-reveal].in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  [data-reveal][data-delay="100"] { transition-delay: 80ms; }
+  [data-reveal][data-delay="150"] { transition-delay: 130ms; }
+  [data-reveal][data-delay="200"] { transition-delay: 180ms; }
+  [data-reveal][data-delay="300"] { transition-delay: 260ms; }
+  [data-reveal][data-delay="400"] { transition-delay: 340ms; }
+  [data-reveal][data-delay="500"] { transition-delay: 420ms; }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;

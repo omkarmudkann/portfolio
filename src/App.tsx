@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navigation from "@/components/Navigation";
+import ScrollObserver from "@/components/ScrollObserver";
 import Index from "./pages/Index";
 import AboutPage from "./pages/AboutPage";
 import Work from "./pages/Work";
@@ -21,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         {/* ✅ Navigation always visible */}
         <Navigation />
+        <ScrollObserver />
 
         <Routes>
           {/* Home */}

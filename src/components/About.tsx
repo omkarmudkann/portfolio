@@ -1,53 +1,32 @@
-import { Target, Users, TrendingUp, Lightbulb } from "lucide-react";
-
-const skills = [
-  {
-    icon: Target,
-    title: "Strategy",
-    description: "Defining product vision and roadmaps that align with business goals",
-  },
-  {
-    icon: Users,
-    title: "User Research",
-    description: "Deep customer discovery to uncover real needs and pain points",
-  },
-  {
-    icon: TrendingUp,
-    title: "Growth",
-    description: "Data-driven experimentation to optimize funnels and retention",
-  },
-  {
-    icon: Lightbulb,
-    title: "Automation",
-    description: "Building efficient workflows that eliminate manual work",
-  },
-];
-
 const About = () => {
   return (
     <section id="about" className="section-padding">
       <div className="section-container max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-serif font-medium mb-8">
+        <h2 data-reveal className="text-4xl md:text-5xl font-serif font-medium mb-8">
           About
         </h2>
 
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-          <p>
-            I’m a technical Product Manager with experience 
-            building customer-facing and internal platforms across 
-            SaaS, fintech, and operational domains.
+        <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
+          <p data-reveal data-delay="100">
+            I'm a Technical Product Manager with 4+ years of experience building
+            customer-facing and internal platforms across fintech, SaaS, and
+            operational domains — with deep expertise in payment systems,
+            subscription lifecycle management, and AI-enabled workflows.
           </p>
 
-          <p>
-            I’ve led end-to-end product development across CRM, ordering, 
-            subscriptions, and payment systems—working closely with engineering, 
-            operations, and leadership teams to deliver scalable, revenue-impacting solutions.
+          <p data-reveal data-delay="200">
+            I've led end-to-end product development across eNACH integrations,
+            SI mandate flows, recurring payment platforms, CRM, and AI-powered
+            operations tools — working closely with engineering, operations, and
+            leadership to deliver scalable, RBI-compliant, revenue-impacting solutions.
           </p>
 
-          <p>
-            My work focuses on product strategy, system design, API-driven integrations, 
-            and automation. I enjoy solving complex problems, improving operational efficiency, 
-            and building products that scale reliably in real-world environments.
+          <p data-reveal data-delay="300">
+            My work sits at the intersection of product strategy, system design,
+            and API-driven integrations. I enjoy solving complex, high-stakes problems —
+            from reducing manual payment follow-ups by 60% to building LLM-enabled
+            automation that saved 300+ hours per month — and shipping products that
+            scale reliably in real-world environments.
           </p>
         </div>
       </div>
